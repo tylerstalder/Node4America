@@ -1,17 +1,24 @@
-What is nodejs
+Some people on our team wanted a quick intro to NodeJS and the
+advantages and use cases for it. I've mostly used it for simple scripts
+and http utilties, but I built these examples for us to walkthrough in
+about an hour. This was also an introduction to event driven programming
+and the callback patterns in node.
 
-Simple hello world
-http://localhost:8124/
+I. What is nodejs
 
-add an event listener to count visitors
+II. Simple hello world from nodejs.org (helloworld.js)
 
-install npm
-curl http://npmjs.org/install.sh | npm_install=rc sh
-export NODE_PATH="/usr/local/lib/node"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
-source ~/.bashrc
+III. Extended example showing in memory data structures and variables to
+count the number of connections that have hit the node server.
+(counter.js)
 
-build a scraper
-http://sfpl.org/index.php?pg=2000185701
+IV. Simple text proxy showing more of the http module and events
+attached to the request object and their anonymous callbacks. (proxy.js)
 
+V. Next we walked through NPM and how to get it installed npmjs.org,
+then installing jsdom with npm install jsdom
+
+VI. Web scraper using JSDOM a 3rd party library and nested callbacks and 
+event handlers to extract a portion of html from a remote server using
+http get and the DOM API. (scraper.js)
 
